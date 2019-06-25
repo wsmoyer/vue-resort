@@ -1,5 +1,5 @@
 <template>
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <nav class="navbar navbar-expand-lg mynavbar navbar-dark text-white">
   <a class="navbar-brand" href="#">Resort Site</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -32,6 +32,8 @@ name:"Navbar"
 }
 </script>
 
-<style>
-
+<style scoped>
+.mynavbar{
+  background: var(--primaryColor) !important;
+}
 </style>

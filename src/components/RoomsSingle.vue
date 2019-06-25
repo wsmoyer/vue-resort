@@ -1,17 +1,19 @@
 <template>
-    <div class="container">
+    <div class="container py-4">
         <div v-for="room in roomArr" :key="room.sys.id">
 <h1 class="text-capitalize">{{room.fields.name}}</h1>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-xs-12">
         <div class="row">
-            <div class="col-md-6" :key="img.index"  v-for="img in room.fields.images" 
+            <div class="col-md-6 col-xs-12" :key="img.index"  v-for="img in room.fields.images" 
  >
         <img :src="img.fields.file.url" class="img-fluid my-3" alt="">
             </div>
         </div>
     </div>
-    <div class="col-md-6"><p class="lead">
+    <div class="col-md-6">
+        <h3>Description</h3>
+        <p class="lead">
         {{room.fields.description}}
         </p></div>
 </div>

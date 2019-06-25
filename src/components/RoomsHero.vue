@@ -1,6 +1,6 @@
 <template>
     <div class="defaultHero">
-  <h1 class="display-4">Hello, world!</h1>
+  <h1 >Resort Site</h1>
 </div>
 </template>
 

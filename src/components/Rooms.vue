@@ -1,6 +1,6 @@
 <template>
-<div class="row">
-    <div v-for="room in rooms" :key="room.sys.id" class="col-xs-4"  >
+<div>
+    <div v-for="room in rooms" :key="room.sys.id"  >
 <Room v-bind:room="room" v-if="room.fields.featured"/>
     </div>
 </div>
